@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS tatoeba;
+CREATE DATABASE IF NOT EXISTS tatoeba DEFAULT CHARACTER SET UTF8;
+use tatoeba; 
+CREATE TABLE jpn_indices ( 
+	id INT NOT NULL AUTO_INCREMENT, 
+	sentence_id INT NOT NULL, 
+	meaning_id INT NOT NULL, 
+	text TEXT NOT NULL, 
+	PRIMARY KEY (id) 
+);
